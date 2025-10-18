@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lymar Diana and Sirman Suzanna_CityFuture</title>
+
+  <style>
+    :root {
+      --main: #1f2937;
+      --accent: #06b6d4;
+      --bg: #ffffff;
+      --text: #111827;
+      --border: #e5e7eb;
+      --muted: #6b7280;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: var(--main);
+      color: #fff;
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--main);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    #hero {
+      background: linear-gradient(90deg, var(--accent), rgba(6,182,212,0.2));
+      border-radius: 0 0 20px 20px;
+      padding: 100px 20px;
+      text-align: center;
+      color: #083344;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    figure {
+      background-color: #f9fafb;
+      border-radius: 12px;
+      padding: 10px;
+      transition: transform 0.3s;
+      border: 1px solid var(--border);
+    }
+
+    figure:hover { transform: scale(1.03); }
+
+    figure img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #f9fafb;
+      border-radius: 10px;
+      padding: 20px;
+      display: inline-block;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    button {
+      background-color: var(--accent);
+      color: #000;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: var(--main);
+      color: #fff;
+    }
+
+    footer {
+      background-color: var(--main);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a { display: block; }
+      #hero { padding: 60px 15px; }
+      figure img { height: 150px; }
+    }
+  </style>
+</head>
+<body>
+
+<header id="navigation">
+  <nav aria-label="Основна навігація">
+    <a href="#hero">Головна</a>
+    <a href="#transport">Транспорт</a>
+    <a href="#architecture">Архітектура</a>
+    <a href="#ecology">Екологія</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#interactive">Інтерактив</a>
+    <a href="#ai">Як я використовувала ШІ</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="hero">
+    <h1>Місто майбутнього</h1>
+    <p>Київ, що рухається до сталості: зручний транспорт, розумні будівлі та чисте довкілля.</p>
+  </section>
+
+  <section id="transport">
+    <h2>Інноваційний транспорт</h2>
+    <p>Безпілотні шатли, єдиний цифровий квиток і швидкі пересадки зменшують затори та викиди.</p>
+    <p><strong>Факт (Київ):</strong> станція метро «Арсенальна» — одна з найглибших у світі; модернізація ліфтів і ескалаторів пришвидшить пересадку для пасажирів.</p>
+  </section>
+
+  <section id="architecture">
+    <h2>Сучасна архітектура</h2>
+    <p>Будинки з «розумними» фасадами: сонячні дахи, автоматичне затінення й озеленення для комфорту та економії енергії.</p>
+    <p><strong>Факт (Україна):</strong> інноваційні кластери на кшталт Unit.City формують екосистему для технологічних рішень у міському просторі.</p>
+  </section>
+
+  <section id="ecology">
+    <h2>Екологічні рішення</h2>
+    <p>Міські сади, дощові садки та сортування «за замовчуванням» допомагають відновлювати природу в межах міста.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Міні-галерея</h2>
+    <div class="gallery">
+      <figure>
+        <img src="Diana/Kiev.jpg" alt="Нічний Київ і міст через Дніпро" />
+        <figcaption>Нічний Київ з видом на міст</figcaption>
+      </figure>
+      <figure>
+        <img src="Diana/Lucid_Origin____2050___________________________________________3.jpg" alt="Панорама міста з висоти" />
+        <figcaption>Панорама столиці з висоти</figcaption>
+      </figure>
+      <figure>
+        <img src="Diana/Lucid_Origin_______________________iku________________________3.jpg" alt="Монумент та сучасні будівлі" />
+        <figcaption>Символи міста й сучасна забудова</figcaption>
+      </figure>
+      <figure>
+        <img src="Diana/b3d4cf41-a0ab-494a-a1d8-8f23481f8db6.png" alt="Міський пейзаж у вечірніх вогнях" />
+        <figcaption>Міський пейзаж у вечірніх вогнях</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="interactive">
+    <h2>Міні-опитування</h2>
+    <p>Що, на твою думку, треба впровадити в першу чергу?</p>
+    <form id="pollForm">
+      <label><input type="radio" name="vote" value="transport" /> Транспорт</label>
+      <label><input type="radio" name="vote" value="architecture" /> Архітектура</label>
+      <label><input type="radio" name="vote" value="ecology" /> Екологія</label>
+      <button type="submit">Проголосувати</button>
+    </form>
+    <p id="result" aria-live="polite"></p>
+  </section>
+
+  <section id="ai">
+    <h2>Як я використовувала ШІ</h2>
+    <h1>Мій промпт:</h1>
+    <p> 
+       Зроби структуру вебсторінки на тему «Місто майбутнього». Сторінка повинна містити такі частини: Hero, навігацію з якірними посиланнями, три змістові розділи, міні-галерею, інтерактивну частину (JavaScript без бекенду), footer і секцію «Як я використовувала ШІ». Кожна секція має мати власний id, щоб можна було легко змінювати стилі. Тексти мають бути написані зрозумілою українською мовою у вигляді логічних абзаців. Для зображень додай атрибут src, але без посилань — я додам їх сама. Назва сторінки — Lymar Diana and Sirman Suzanna_CityFuture. JavaScript-частина повинна бути простою: наприклад, інтерактивна форма або опитування, яке працює без бекенду. Код HTML, CSS і JavaScript потрібно об’єднати в один файл (без окремих підключень). Стиль оформлення — мінімалізм із двома гармонійними кольорами, hover-ефектами і адаптивністю для телефонів. Розмітка має бути семантично правильною — з тегами header, nav, main, section, footer. У міні-галереї має бути 3–4 зображення, а в основних розділах — два локальні факти про Україну, пов’язані з майбутніми технологіями, архітектурою чи екологією.</p>
+
+    <h1>Промпт для генерації картинок:</h1>
+     <p> Згенеруй 4 картинки</p>
+     <p>1. Нічний Київ і міст через Дніпро в 2050 році</p>
+    <p>2. Згенеруй картинку Києва 2050 року Панорама столиці з висоти</p>
+    <p>3. Згенеруй картинку Києва 2050 року Символи міста й сучасна забудова</p>
+    <p>4. Згенеруй картинку Києва 2050 року Міський пейзаж у вечірніх вогнях</p>
+  </section>
+</main>
+
+<footer id="footer">
+  <p>© 2025 · Проєкт «CityFuture»</p>
+</footer>
+
+<script>
+  const form = document.getElementById('pollForm');
+  const result = document.getElementById('result');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const choice = new FormData(form).get('vote');
+    result.textContent = choice
+      ? `Дякуємо! Ви обрали: ${choice}.`
+      : 'Будь ласка, зробіть вибір.';
+  });
+</script>
+
+</body>
+</html>
